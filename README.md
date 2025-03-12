@@ -31,7 +31,52 @@ order_finished – Order was finished marked with a final status (is generated f
 | shop_id | int | ID |
 
 ### 1 - Data Cleaning & EDA
-- Missing values, duplicates, unique shops and users, distributions etc...
+- [] 1. Check for Data Completeness
+
+Verify that events are properly logged for the entire test period (Nov 25-30, 2024)
+Ensure no gaps in data collection for either variation
+Look for any periods of technical issues that might have affected data collection
+
+- [ ] 2. Validate User Assignment
+
+Confirm that users were properly randomized between control and test groups
+Check if the distribution between variations is roughly equal (should be close to 50/50)
+Verify that users stayed in their assigned variation throughout the test period
+
+- [ ] 3. Identify and Handle Outliers
+
+Look for unusual user behavior patterns (e.g., users with extremely high numbers of page reloads)
+Identify and potentially exclude test accounts or internal team members
+Flag sessions with technical errors that might affect normal user behavior
+
+- [ ] 4. Session and User Data Consistency
+
+Check for broken sessions (incomplete funnel data)
+Ensure each session is properly associated with the correct user_id
+Validate that the platform information (iOS/Android) is consistent within sessions
+
+- [ ] 5. Event Sequence Validation
+
+Verify the logical order of events (e.g., a user can't have order_paid without entry_to_shop)
+Look for duplicate events within the same session
+Check for proper timestamps and chronological order of events
+
+- [x] 6. Handle Missing Values
+
+Identify any null values in critical fields
+Determine appropriate strategies for missing data (e.g., exclusion or imputation)
+Check if missing values are distributed equally between test and control groups
+
+- [] 7. Platform-Specific Issues
+
+Check if data collection works properly across both iOS and Android
+Look for platform-specific anomalies that might indicate technical issues
+
+- [] 8. Create Analysis-Ready Dataset
+
+Create a clean dataset that includes only valid sessions and events
+Generate derived metrics for analysis (conversion rates, time between events, etc.)
+Segment users appropriately for cohort analysis
 
 ### 2 - Calculate conversion rates 
 - Restaurant view → Restaurant entry
