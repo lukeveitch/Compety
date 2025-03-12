@@ -31,7 +31,7 @@ order_finished – Order was finished marked with a final status (is generated f
 | shop_id | int | ID |
 
 ### 1 - Data Cleaning & EDA
-- [] 1. Check for Data Completeness
+- [ ] 1. Check for Data Completeness
 
 Verify that events are properly logged for the entire test period (Nov 25-30, 2024)
 Ensure no gaps in data collection for either variation
