@@ -6,11 +6,11 @@
 
 **Hypothesis**: Increasing the size of food images on restaurant menu cards will improve conversion to orders.
 
-**Test Location**: London
-**Test Duration**: 00:00, Monday, 25 November 2024 to 23:59, Saturday, 30 November 2024
-**User Split**: Users were randomly assigned to either the control group (original design) or the test group (larger food
+- **Test Location**: London
+- **Test Duration**: 00:00, Monday, 25 November 2024 to 23:59, Saturday, 30 November 2024
+- **User Split**: Users were randomly assigned to either the control group (original design) or the test group (larger food
 images)
-**Key UI Difference**: The control group saw the original smaller images, while the test group saw larger food images (as shown in the provided screenshots)
+- **Key UI Difference**: The control group saw the original smaller images, while the test group saw larger food images (as shown in the provided screenshots)
 
 **Dataset Overview**
 reload_the_page – User updated the list of restaurants
