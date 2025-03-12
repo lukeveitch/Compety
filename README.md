@@ -31,13 +31,15 @@ order_finished – Order was finished marked with a final status (is generated f
 | shop_id | int | ID |
 
 ### 1 - Data Cleaning & EDA
+- Missing values, duplicates, unique shops and users, distributions etc...
 
 ### 2 - Calculate conversion rates 
 - Restaurant view → Restaurant entry
-- Restaurant entry → Paid order
-- Paid order → Order finished (with successful status)
+- Restaurant entry → paid order
+- Paid order → Order finished 
 
 ### 3 - Statistical Significance
+- Calc. confidence intervals
 
 ### 4 - Cohort Analysis
 
